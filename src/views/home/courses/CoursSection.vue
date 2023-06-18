@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="flex flex-col w-full my-20">
+  <div class="flex flex-col w-full">
     <Up />
     <Down />
     <Arrow />

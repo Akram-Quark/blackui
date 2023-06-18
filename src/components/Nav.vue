@@ -1,8 +1,6 @@
 <template lang="">
   <nav class="bg-mydark fixed z-10 dark:bg-gray-900 w-full top-0 left-0">
-    <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-    >
+    <div class="w-full flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="https://flowbite.com/" class="flex items-center">
         <div class="w-4 mx-3 h-4 empty:bg-white"></div>
         <span class="self-center text-white text-xl font-krub whitespace-nowrap"

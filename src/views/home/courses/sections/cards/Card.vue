@@ -1,7 +1,7 @@
 <template lang="">
   <div
     href="#"
-    class="md:mt-0 mt-8 relative before:content-['01'] before:absolute before:top-0 before:left-0 before:bg-white flex flex-col items-center justify-center p-3 w-56 h-64 font-krub bg-mydark border border-gray-200 before:p-2"
+    class="2x:lg:mx-20 mx-8 my-1 relative before:content-['01'] before:absolute before:top-0 before:left-0 before:bg-white flex flex-col items-center justify-center 2xl:w-68 h-80 font-krub bg-mydark border border-gray-200 before:p-2"
   >
     <h5
       class="mb-2 text-2xl font-bold text-center text-white relative after:content-[''''] after:absolute after:bg-mypurple after:w-28 after:h-1 after:rounded-full after:bottom-0 after:left-0"

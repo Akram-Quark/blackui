@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="grid grid-cols-1 gap-y-40 md:grid-cols-3 md:gap-19 p-8">
+  <div class="grid grid-cols-1 md:grid-cols-3">
     <Left />
     <Mid />
     <Right />

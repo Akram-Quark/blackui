@@ -1,5 +1,5 @@
 <template>
-  <section class="h-screen w-full max-w-7xl font-krub bg-mydark">
+  <section class="mx-auto w-7xl font-krub bg-mydark">
     <Nav />
     <div class="mt-28 flex flex-col">
       <Banner />
@@ -20,11 +20,11 @@ import Banner from "./hero/Banner.vue";
 import Offers from "./offers/Offers.vue";
 import Chalenge from "@/views/home/chalenges/Chalenge.vue";
 import CoursSection from "./courses/CoursSection.vue";
-import About from "./aboutSection/About.vue";
-import Video from "./videoSection/Video.vue";
+import About from "./about-section/About.vue";
+import Video from "./video-section/Video.vue";
 import TeamSection from "./team/TeamSection.vue";
 import Subscribe from "./subscribtion/Subscribe.vue";
-import Footer from "./footerSection/Footer.vue";
+import Footer from "./footer-section/Footer.vue";
 export default {
   name: "HomeView",
   components: {

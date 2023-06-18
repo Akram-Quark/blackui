@@ -1,9 +1,11 @@
 <template lang="">
-  <div class="grid gap-6 md:grid-cols-4 ml-14 my-5">
-    <CardComponent />
-    <CardComponent />
-    <CardComponent />
-    <CardComponent />
+  <div class="w-full">
+    <div class="flex justify-center mx-auto my-2">
+      <CardComponent />
+      <CardComponent />
+      <CardComponent />
+      <CardComponent />
+    </div>
   </div>
 </template>
 <script>

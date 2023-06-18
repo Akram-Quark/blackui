@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="grid my-36 md:my-36 md:py-0 md:grid-cols-2 p-6">
+  <div class="grid md:grid-cols-2 2xl:w-3/4 2xl:mx-auto my-14">
     <Left />
     <Right />
   </div>

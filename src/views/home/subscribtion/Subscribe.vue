@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="grid my-40 md:grid-cols-2 md:py-0">
+  <div class="grid my-14 md:grid-cols-2 md:py-0">
     <Right />
     <Left />
   </div>

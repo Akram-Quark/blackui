@@ -1,12 +1,14 @@
 <template lang="">
-  <div class="grid md:p-0 p-8">
-    <div class="text-center text-white">
-      <h1 class="font-bolder text-4xl">Subscribe</h1>
-      <h5 class="text-mypurple text-2xl">to our newesletter</h5>
-      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+  <div class="flex flex-col justify-center">
+    <div class="text-center text-white space-y-3">
+      <h1 class="font-bolder text-4xl 2xl:text-6xl">Subscribe</h1>
+      <h5 class="text-mypurple text-2xl 2xl:text-4xl">to our newesletter</h5>
+      <h5 class="2xl:text-xl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </h5>
     </div>
 
-    <form class="px-6 mt-2">
+    <form class="w-[60%] mx-auto mt-2">
       <div class="mb-6">
         <input
           type="text"

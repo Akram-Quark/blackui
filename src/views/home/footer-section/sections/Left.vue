@@ -2,10 +2,12 @@
   <div class="text white flex text-white p-3">
     <div class="flex-1 items-center justify-center flex">
       <div>
-        <h1 class="font-bold text-2xl underline underline-offset-8 my-3">
+        <h1
+          class="font-bold 2xl:text-2xl text-2xl underline underline-offset-8 my-3"
+        >
           About
         </h1>
-        <ul>
+        <ul class="2xl:text-xl space-y-2">
           <li>History</li>
           <li>Our team</li>
           <li>Mission statement</li>
@@ -16,10 +18,12 @@
     </div>
     <div class="flex-1 items-center justify-center flex">
       <div>
-        <h1 class="font-bold text-2xl underline underline-offset-8 my-3">
+        <h1
+          class="font-bold text-2xl 2xl:text-2xl underline underline-offset-8 my-3"
+        >
           What we do
         </h1>
-        <ul>
+        <ul class="2xl:text-xl space-y-2">
           <li>Newsand stories</li>
           <li>Publications</li>
           <li>Take actions</li>

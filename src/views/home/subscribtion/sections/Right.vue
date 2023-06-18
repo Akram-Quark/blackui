@@ -1,9 +1,9 @@
 <template lang="">
-  <div class="flex justify-center md:my-0 my-20">
+  <div class="flex justify-center">
     <img
       src="@/assets/images/heroimg.png"
       alt=""
-      class="md:w-72 w-3/4 object-fill shadow-2xl shadow-black"
+      class="2xl:w-[45%] object-fill shadow-2xl shadow-black"
     />
   </div>
 </template>

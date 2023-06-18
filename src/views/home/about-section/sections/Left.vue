@@ -1,19 +1,17 @@
 <template lang="">
-  <div class="md:flex-col my-8">
+  <div class="md:flex-col mt-2 ml-8">
     <div class="text-white space-y-4">
-      <h1 class="text-5xl md:text-justify text-center font-bold">
+      <h1 class="text-3xl 2xl:text-6xl md:text-justify text-center font-bold">
         About <span class="text-mypurple">us.</span>
       </h1>
       <p
-        class="font-bold text-sm md:w-1/2 md:text-justify leading-snug text-white text-center"
+        class="leading-6 font-medium text-sm 2xl:text-xl w-3/4 md:text-justify text-gray-300 text-center"
       >
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quae
         sequi a tempora quod, blanditiis doloribus vel iusto fugit maxime
-        quaerat! Explicabo voluptates totam ullam quam officia sunt provident
-        aliquam.
       </p>
       <div class="">
-        <ul class="grid grid-cols-2 text-white md:font-bold">
+        <ul class="grid grid-cols-2 text-gray-300 md:font-normal">
           <span>
             <li class="md:mb-2 md:text-justify text-center">
               <div class="empty:bg-mypurple inline-block w-3 h-3 mx-1"></div>

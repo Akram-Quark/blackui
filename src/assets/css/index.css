@@ -3,9 +3,13 @@
 @tailwind utilities;
 @font-face {
   font-family: "krub";
-  src: url("../public/Krub/Krub-Regular.ttf");
+  src: url("../../../public/Krub/Krub-Medium.ttf");
 }
 
 html {
+  height: -webkit-fill-available;
+}
+body {
   background-color: #181818;
+  height: -webkit-fill-available;
 }
