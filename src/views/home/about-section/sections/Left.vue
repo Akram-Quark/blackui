@@ -20,14 +20,14 @@
             <div class="empty:bg-mypurple inline-block w-3 h-3 mx-1"></div>
             Lorem, ipsum dolor sit
           </li>
-          <li class="text-center mb-4 sm:mb-0 lg:text-left">
+          <li class="text-center mb-4 lg:text-left">
             <div class="empty:bg-mypurple inline-block w-3 h-3 mx-1"></div>
             Lorem, ipsum dolor sit
           </li>
         </span>
 
         <span>
-          <li class="mb-4 text-center sm:mb-0 lg:text-left">
+          <li class="mb-4 text-center lg:text-left">
             <div class="empty:bg-mypurple inline-block w-3 h-3 mx-1"></div>
             Lorem, ipsum dolor sit
           </li>
