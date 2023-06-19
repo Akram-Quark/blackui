@@ -1,15 +1,15 @@
 <template lang="">
-  <div class="grid">
-    <div class="w-full h-14">
+  <div class="my-12 flex items-start md:my-0 md:grid sm:order-2 lg:order-3">
+    <div class="w-full h-14 hidden lg:block">
       <h1
-        class="font-semibold 2xl:p-2 text-white border right-0 absolute w-40 2xl:w-60 text-center px-4"
+        class="lg:block font-semibold border 2xl:p-2 text-white right-0 absolute w-40 2xl:w-60 text-center px-4"
       >
         EDISION<br />2022
       </h1>
     </div>
 
-    <div class="max-w-sm bg-mydark rounded-lg mx-auto">
-      <div class="p-5">
+    <div class="text-center sm:text-left max-w-sm bg-mydark rounded-lg mx-auto">
+      <div class="md:p-5">
         <a href="#">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
             Noteworthy technology acquisitions 2021
@@ -43,7 +43,3 @@
     </div>
   </div>
 </template>
-<script>
-export default {};
-</script>
-<style lang=""></style>

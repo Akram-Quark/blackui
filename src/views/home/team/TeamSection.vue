@@ -22,6 +22,7 @@ export default {
       imgs: ["avatar1.jpg", "avatar2.jpg", "avatar3.jpg"],
     };
   },
+
   components: {
     Card,
   },

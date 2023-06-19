@@ -1,5 +1,7 @@
 <template lang="">
-  <div class="text white flex text-white p-3">
+  <div
+    class="text sm:order-2 lg:order-1 white flex text-white p-3 2xl:w-[50%] 2xl:mx-auto"
+  >
     <div class="flex-1 items-center justify-center flex">
       <div>
         <h1
@@ -34,7 +36,3 @@
     </div>
   </div>
 </template>
-<script>
-export default {};
-</script>
-<style lang=""></style>

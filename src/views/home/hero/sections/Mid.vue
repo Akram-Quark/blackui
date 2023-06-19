@@ -1,5 +1,7 @@
 <template lang="">
-  <div class="">
+  <div
+    class="sm:order-3 sm:place-content-center sm:col-span-2 lg:order-2 lg:col-span-1"
+  >
     <div class="w-full flex items-center relative">
       <div class="top-55 mx-auto z-0">
         <div
@@ -15,7 +17,3 @@
     </div>
   </div>
 </template>
-<script>
-export default {};
-</script>
-<style lang=""></style>

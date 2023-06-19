@@ -1,5 +1,7 @@
 <template lang="">
-  <div class="relative flex justify-end mr-6">
+  <div
+    class="relative mb-40 lg:mb-0 flex justify-center lg:justify-end lg:mr-6 order-1 lg:order-2"
+  >
     <div class="w-64 top-0 left-73 absolute">
       <img src="@/assets/images/aboutimg.png" alt="" />
     </div>
@@ -8,7 +10,3 @@
     ></div>
   </div>
 </template>
-<script>
-export default {};
-</script>
-<style lang=""></style>

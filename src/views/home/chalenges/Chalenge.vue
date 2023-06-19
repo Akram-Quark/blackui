@@ -6,11 +6,13 @@
     <Dowen />
   </div>
 </template>
+
 <script>
 import Left from "./sections/Left.vue";
 import Mid from "./sections/Mid.vue";
 import Right from "./sections/Right.vue";
 import Dowen from "./sections/Dowen.vue";
+
 export default {
   components: {
     Left,
@@ -20,4 +22,3 @@ export default {
   },
 };
 </script>
-<style lang=""></style>

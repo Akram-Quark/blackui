@@ -22,6 +22,7 @@
 <script>
 import Raiting from "./cardTools/Raiting.vue";
 import Quote from "./cardTools/Quote.vue";
+
 export default {
   props: ["img"],
 

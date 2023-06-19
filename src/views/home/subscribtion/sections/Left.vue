@@ -1,15 +1,15 @@
 <template lang="">
-  <div class="flex flex-col justify-center">
-    <div class="text-center text-white space-y-3">
+  <div class="flex flex-col justify-center mt-8 md:mt-0">
+    <div class="text-center text-white">
       <h1 class="font-bolder text-4xl 2xl:text-6xl">Subscribe</h1>
       <h5 class="text-mypurple text-2xl 2xl:text-4xl">to our newesletter</h5>
-      <h5 class="2xl:text-xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <h5 class="text-sm py-3 text-gray-500 2xl:text-xl">
+        Lorem ipsum dolor sit amet consectetur adipisicing
       </h5>
     </div>
 
     <form class="w-[60%] mx-auto mt-2">
-      <div class="mb-6">
+      <div class="mb-6 2xl:mb-12">
         <input
           type="text"
           id="name"
@@ -18,7 +18,7 @@
           required
         />
       </div>
-      <div class="mb-6">
+      <div class="mb-6 2xl:mb-12">
         <input
           type="email"
           id="email"
@@ -27,7 +27,7 @@
           required
         />
       </div>
-      <div class="mb-6">
+      <div class="mb-6 2xl:mb-12">
         <textarea
           type="text"
           id="message"
@@ -47,7 +47,3 @@
     </form>
   </div>
 </template>
-<script>
-export default {};
-</script>
-<style lang=""></style>

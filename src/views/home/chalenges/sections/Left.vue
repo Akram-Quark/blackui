@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="flex mt-36 md:mt-0 flex-col">
+  <div class="flex md:mt-0 flex-col">
     <div class="flex items-center">
       <h1
         class="text-medium ml-8 [writing-mode:vertical-lr] text-left text-white text-lg tracking-wider"
@@ -10,7 +10,3 @@
     </div>
   </div>
 </template>
-<script>
-export default {};
-</script>
-<style lang=""></style>

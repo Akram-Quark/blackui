@@ -13,7 +13,7 @@
           </h1>
         </div>
 
-        <h2 class="font-semibold text-white animate-pulse">
+        <h2 class="font-semibold text-white animate-pulse mb-6">
           <div class="w-3 mx-3 h-3 empty:bg-white inline-block"></div>
           BECOM A <br />
           PRO-DESIGNER
@@ -22,7 +22,3 @@
     </div>
   </div>
 </template>
-<script>
-export default {};
-</script>
-<style lang=""></style>

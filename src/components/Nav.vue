@@ -3,14 +3,12 @@
     <div class="w-full flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="https://flowbite.com/" class="flex items-center">
         <div class="w-4 mx-3 h-4 empty:bg-white"></div>
-        <span class="self-center text-white text-xl font-krub whitespace-nowrap"
-          >YOUR LOGO</span
-        >
+        <span class="self-center text-white text-xl font-krub">YOUR LOGO</span>
       </a>
-      <div class="flex md:order-2">
+      <div class="flex lg:order-2">
         <button
           type="button"
-          class="text-mydark bg-white md:hover:bg-mydark md:hover:text-white focus:ring-4 focus:outline-none font-medium text-sm px-4 py-2 text-center mr-3 md:mr-0"
+          class="text-mydark lg:block hidden bg-white md:hover:bg-mydark md:hover:text-white focus:ring-4 focus:outline-none font-medium text-sm px-4 py-2 text-center mr-3 md:mr-0"
         >
           Get started
         </button>
@@ -38,11 +36,11 @@
         </button>
       </div>
       <div
-        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+        class="items-center justify-evenly hidden h-screen sm:h-auto w-full md:flex md:w-auto lg:order-1"
         id="navbar-sticky"
       >
         <ul
-          class="flex flex-col p-4 md:p-0 mt-4 tfont-krub bg-mydark md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-bgnd"
+          class="flex flex-col p-4 md:p-0 mt-4 font-krub bg-mydark md:flex-row md:space-x-1 md:mt-0 md:border-0"
         >
           <li>
             <a
@@ -78,8 +76,10 @@
     </div>
   </nav>
 </template>
+
 <script>
 import { initCollapses } from "flowbite";
+
 export default {
   mounted() {
     initCollapses();
