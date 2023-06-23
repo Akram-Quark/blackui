@@ -8,6 +8,7 @@
 <script>
 import Left from "./sections/Left.vue";
 import Right from "./sections/Right.vue";
+
 export default {
   components: {
     Left,

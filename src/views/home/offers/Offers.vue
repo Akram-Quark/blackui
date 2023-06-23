@@ -25,7 +25,9 @@
       <div
         :key="offer.id"
         class="text-white w-60 h-20 flex space-x-4 py-2 items-center p-5"
-        :class="[$i18n.locale == 'ar' ? 'justify-center font-cairo' : '']"
+        :class="[
+          $i18n.locale == 'ar' ? 'justify-center font-cairo font-semibold' : '',
+        ]"
         v-else
       >
         <div

@@ -4,6 +4,7 @@
   >
     <h1
       class="text-center py-12 text-white font-extrabold md:text-5xl md:space-y-2"
+      :class="[$i18n.locale == 'ar' ? 'px-12 mr-4 lg:mr-0 ' : '']"
     >
       {{ $t("message.chalanges.mid.ACCEPT") }}<br />{{
         $t("message.chalanges.mid.NEW")

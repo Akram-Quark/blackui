@@ -81,7 +81,7 @@
               {{ $t("message.nav.contact") }}
             </a>
           </li>
-          <li :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']">
+          <li :class="[$i18n.locale == 'ar' ? 'font-cairo font-semibold' : '']">
             <LangSelector />
           </li>
         </ul>
@@ -93,12 +93,14 @@
 <script>
 import { initCollapses } from "flowbite";
 import LangSelector from "./LangSelector.vue";
+
 export default {
   name: "Nav",
 
   mounted() {
     initCollapses();
   },
+
   components: { LangSelector },
 };
 </script>

@@ -18,6 +18,7 @@
 
 <script>
 import Card from "./cards/Card.vue";
+
 export default {
   data() {
     return {

@@ -9,7 +9,6 @@ import {
   faInstagram,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
-
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import router from "./router";
 
@@ -17,7 +16,6 @@ Vue.config.productionTip = false;
 library.add(faFacebook);
 library.add(faInstagram);
 library.add(faTelegram);
-
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.use(FlagIcon);
 
