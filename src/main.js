@@ -2,13 +2,16 @@ import Vue from "vue";
 import App from "./App.vue";
 import "./assets/css/index.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
-
+import FlagIcon from "vue-flag-icon";
+import i18n from "@/language/translate.js";
 import {
   faFacebook,
   faInstagram,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import router from "./router";
 
 Vue.config.productionTip = false;
 library.add(faFacebook);
@@ -16,7 +19,10 @@ library.add(faInstagram);
 library.add(faTelegram);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.use(FlagIcon);
 
 new Vue({
+  router,
   render: (h) => h(App),
+  i18n,
 }).$mount("#app");

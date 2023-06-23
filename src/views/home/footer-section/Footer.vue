@@ -1,6 +1,7 @@
 <template lang="">
   <div
     class="grid h-[700px] sm:grid-cols-2 md:h-96 sm:h-[700px] mt-10 bg-mypurple"
+    :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
   >
     <Left />
     <Right />

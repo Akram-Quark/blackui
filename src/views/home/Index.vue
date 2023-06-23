@@ -1,5 +1,5 @@
 <template>
-  <section class="mx-auto w-full font-krub bg-mydark">
+  <section class="mx-auto w-full font-krub bg-mydark" :dir="dir">
     <Nav />
     <div class="mt-28 flex flex-col">
       <Banner />
@@ -29,6 +29,16 @@ import Footer from "./footer-section/Footer.vue";
 
 export default {
   name: "HomeView",
+
+  computed: {
+    dir() {
+      if (this.$i18n.locale === "en") {
+        return "ltr";
+      } else {
+        return "rtl";
+      }
+    },
+  },
 
   components: {
     Nav,

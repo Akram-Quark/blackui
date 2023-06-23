@@ -7,14 +7,14 @@
         <h1
           class="font-bold 2xl:text-2xl text-2xl underline underline-offset-8 my-3"
         >
-          About
+          {{ $t("message.footer.left.title") }}
         </h1>
         <ul class="2xl:text-xl space-y-2">
-          <li>History</li>
-          <li>Our team</li>
-          <li>Mission statement</li>
-          <li>Terms & Conditions</li>
-          <li>Privacypolicy</li>
+          <li>{{ $t("message.footer.left.item1") }}</li>
+          <li>{{ $t("message.footer.left.item2") }}</li>
+          <li>{{ $t("message.footer.left.item3") }}</li>
+          <li>{{ $t("message.footer.left.item4") }}</li>
+          <li>{{ $t("message.footer.left.item5") }}</li>
         </ul>
       </div>
     </div>
@@ -23,14 +23,14 @@
         <h1
           class="font-bold text-2xl 2xl:text-2xl underline underline-offset-8 my-3"
         >
-          What we do
+          {{ $t("message.footer.mid.title") }}
         </h1>
         <ul class="2xl:text-xl space-y-2">
-          <li>Newsand stories</li>
-          <li>Publications</li>
-          <li>Take actions</li>
-          <li>Recomendations</li>
-          <li>Help</li>
+          <li>{{ $t("message.footer.mid.item1") }}</li>
+          <li>{{ $t("message.footer.mid.item2") }}</li>
+          <li>{{ $t("message.footer.mid.item3") }}</li>
+          <li>{{ $t("message.footer.mid.item4") }}</li>
+          <li>{{ $t("message.footer.mid.item5") }}</li>
         </ul>
       </div>
     </div>

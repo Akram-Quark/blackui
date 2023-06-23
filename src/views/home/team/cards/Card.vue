@@ -8,7 +8,9 @@
         alt="Bonnie image"
         src="@/assets/images/avatar3.jpg"
       />
-      <h1 class="font-medium text-white 2xl:text-xl">Look Deof</h1>
+      <h1 class="font-medium text-white 2xl:text-xl">
+        {{ $t("message.team.name") }}
+      </h1>
     </div>
     <div>
       <Raiting />

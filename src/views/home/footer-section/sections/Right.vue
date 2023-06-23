@@ -4,8 +4,9 @@
   >
     <div class="flex flex-col flex-[.5] lg:text-right text-left">
       <h1 class="lg:text-2xl 2xl:text-2xl font-bold">
-        Sign Up to Recieve <br class="hidden lg:inline-block" />
-        ___Our Newsletter
+        {{ $t("message.footer.right.rec") }}
+        <br class="hidden lg:inline-block" />
+        {{ $t("message.footer.right.news") }}
       </h1>
       <div class="my-2 2xl:my-12">
         <div
@@ -13,7 +14,7 @@
         ></div>
       </div>
       <div class="flex justify-between items-center">
-        <p class="2xl:text-2xl">Folow us !</p>
+        <p class="2xl:text-2xl">{{ $t("message.footer.right.follow") }}</p>
         <font-awesome-icon
           class="lg:text-4xl"
           :icon="{ prefix: 'fab', iconName: 'facebook' }"

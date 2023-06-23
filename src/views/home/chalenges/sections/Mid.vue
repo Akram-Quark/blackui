@@ -5,7 +5,9 @@
     <h1
       class="text-center py-12 text-white font-extrabold md:text-5xl md:space-y-2"
     >
-      ACCEPT<br />NEW<br />CHALLENGES
+      {{ $t("message.chalanges.mid.ACCEPT") }}<br />{{
+        $t("message.chalanges.mid.NEW")
+      }}<br />{{ $t("message.chalanges.mid.CHALLENGES") }}
     </h1>
   </div>
 </template>

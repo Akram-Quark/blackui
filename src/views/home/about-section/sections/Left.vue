@@ -1,39 +1,58 @@
 <template lang="">
   <div
     class="text-white space-y-4 container mx-auto lg:w-full order-2 lg:order-1 lg:ml-6"
+    :class="[$i18n.locale == 'ar' ? 'font-cairo lg:mr-6' : '']"
   >
-    <h1 class="text-3xl 2xl:text-6xl text-center lg:text-left font-bold">
-      About <span class="text-mypurple">us.</span>
+    <h1
+      class="text-3xl 2xl:text-6xl text-center lg:text-left font-bold"
+      :class="[$i18n.locale == 'ar' ? 'lg:text-right' : '']"
+    >
+      {{ $t("message.about.left.title.about") }}
+      <span class="text-mypurple">
+        {{ $t("message.about.left.title.us") }}</span
+      >
     </h1>
     <p
       class="leading-6 py-3 text-justify font-medium text-sm 2xl:text-xl w-3/4 lg:mx-0 lg:text-left mx-auto text-white"
+      :class="[$i18n.locale == 'ar' ? 'lg:text-right' : '']"
     >
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quae
-      sequi a tempora quod, blanditiis doloribus vel iusto fugit maxime
+      {{ $t("message.about.left.p") }}
     </p>
     <div class="">
       <ul
         class="place-content-center grid sm:grid-cols-2 text-white md:font-normal"
       >
         <span>
-          <li class="mb-4 text-center lg:text-left">
+          <li
+            class="mb-4 text-center lg:text-left"
+            :class="[$i18n.locale == 'ar' ? 'lg:text-right' : '']"
+          >
             <div class="empty:bg-mypurple inline-block w-3 h-3 mx-1"></div>
-            Lorem, ipsum dolor sit
+            {{ $t("message.about.left.item") }}
           </li>
-          <li class="text-center mb-4 lg:text-left">
+          <li
+            class="text-center mb-4 lg:text-left"
+            :class="[$i18n.locale == 'ar' ? 'lg:text-right' : '']"
+          >
             <div class="empty:bg-mypurple inline-block w-3 h-3 mx-1"></div>
-            Lorem, ipsum dolor sit
+            {{ $t("message.about.left.item") }}
           </li>
         </span>
 
         <span>
-          <li class="mb-4 text-center lg:text-left">
+          <li
+            class="mb-4 text-center lg:text-left"
+            :class="[$i18n.locale == 'ar' ? 'lg:text-right' : '']"
+          >
             <div class="empty:bg-mypurple inline-block w-3 h-3 mx-1"></div>
-            Lorem, ipsum dolor sit
+            {{ $t("message.about.left.item") }}
           </li>
-          <li class="text-center mb-4 lg:text-left">
+          <li
+            class="text-center mb-4 lg:text-left"
+            :class="[$i18n.locale == 'ar' ? 'lg:text-right' : '']"
+          >
             <div class="empty:bg-mypurple inline-block w-3 h-3 mx-1"></div>
-            Lorem, ipsum dolor sit
+            {{ $t("message.about.left.item") }}
           </li>
         </span>
       </ul>
@@ -42,7 +61,7 @@
           type="button"
           class="focus:outline-none mt-12 text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
         >
-          Read more
+          {{ $t("message.about.left.btn") }}
         </button>
       </div>
     </div>

@@ -1,5 +1,8 @@
 <template lang="">
-  <div class="grid md:grid-cols-3 my-14 space-x-5">
+  <div
+    class="grid md:grid-cols-3 my-14 space-x-5"
+    :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
+  >
     <Left />
     <Mid />
     <Right />

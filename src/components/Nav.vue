@@ -1,7 +1,7 @@
 <template lang="">
   <nav class="bg-mydark fixed z-10 dark:bg-gray-900 w-full top-0 left-0">
-    <div class="w-full flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="https://flowbite.com/" class="flex items-center">
+    <div class="w-full flex flex-wrap items-center justify-between mx-auto">
+      <a href="#" class="flex items-center">
         <div class="w-4 mx-3 h-4 empty:bg-white"></div>
         <span class="self-center text-white text-xl font-krub">YOUR LOGO</span>
       </a>
@@ -9,8 +9,9 @@
         <button
           type="button"
           class="text-mydark lg:block hidden bg-white md:hover:bg-mydark md:hover:text-white focus:ring-4 focus:outline-none font-medium text-sm px-4 py-2 text-center mr-3 md:mr-0"
+          :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
         >
-          Get started
+          {{ $t("message.nav.btn.get_started") }}
         </button>
         <button
           data-collapse-toggle="navbar-sticky"
@@ -47,29 +48,41 @@
               href="#"
               class="block py-2 mx-10 pl-3 pr-4 text-white hover:underline hover:underline-offset-8 bg-mydark rounded md:bg-transparent md:p-0"
               aria-current="page"
-              >Home</a
+              :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
             >
+              {{ $t("message.nav.home") }}
+            </a>
           </li>
           <li>
             <a
               href="#"
               class="block py-2 mx-10 pl-3 pr-4 text-white hover:underline hover:underline-offset-8 bg-mydark rounded md:bg-transparent md:p-0"
-              >About</a
+              :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
             >
+              {{ $t("message.nav.about") }}
+            </a>
           </li>
+
           <li>
             <a
               href="#"
               class="block py-2 mx-10 pl-3 pr-4 text-white hover:underline hover:underline-offset-8 bg-mydark rounded md:bg-transparent md:p-0"
-              >Services</a
+              :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
             >
+              {{ $t("message.nav.services") }}
+            </a>
           </li>
           <li>
             <a
               href="#"
               class="block py-2 pl-3 mx-10 pr-4 text-white hover:underline hover:underline-offset-8 bg-mydark rounded md:bg-transparent md:p-0"
-              >Contact</a
+              :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
             >
+              {{ $t("message.nav.contact") }}
+            </a>
+          </li>
+          <li :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']">
+            <LangSelector />
           </li>
         </ul>
       </div>
@@ -79,11 +92,13 @@
 
 <script>
 import { initCollapses } from "flowbite";
-
+import LangSelector from "./LangSelector.vue";
 export default {
+  name: "Nav",
+
   mounted() {
     initCollapses();
   },
-  name: "Nav",
+  components: { LangSelector },
 };
 </script>

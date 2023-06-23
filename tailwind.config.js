@@ -15,8 +15,13 @@ module.exports = {
       },
       fontFamily: {
         krub: ["krub"],
+        cairo: ["cairo"],
       },
     },
   },
-  plugins: [require("flowbite/plugin"), require("tailwind-scrollbar")],
+  plugins: [
+    require("flowbite/plugin"),
+    require("tailwind-scrollbar"),
+    require("tailwindcss-rtl"),
+  ],
 };

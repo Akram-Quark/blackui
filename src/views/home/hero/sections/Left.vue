@@ -1,13 +1,13 @@
 <template lang="">
   <div class="mx-auto max-w-sm">
-    <div class="grid gap-y-20">
+    <div class="grid">
       <div class="mb-20">
         <h1 class="text-white font-semibold text-7xl">
           UI<sub class="text-mypurple text-7xl">.</sub>
         </h1>
       </div>
       <div class="grid grid-cols-2 gap-0 place-content-start">
-        <div class="-rotate-90 w-10">
+        <div class="[writing-mode:vertical-lr] w-10">
           <h1 class="text-2xl text-let font-krub tracking-wide text-white">
             BEGINER'S
           </h1>
