@@ -18,7 +18,6 @@ const en = {
         title: "Noteworthy technology acquisitions 2021",
         p: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
         READ: "READ MORE",
-        read: "Read more",
         edition: "EDITION",
       },
     },
@@ -99,6 +98,11 @@ const en = {
         news: "___Our Newsletter",
         follow: "Folow us !",
       },
+    },
+    validation: {
+      required: "The {attribute} field is required",
+      email: "The {attribute} field contains an invalid email address",
+      alpha: "The {attribute} field should contain only alphabetic characters",
     },
   },
 };

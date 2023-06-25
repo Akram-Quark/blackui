@@ -9,7 +9,10 @@
         >
           {{ $t("message.footer.left.title") }}
         </h1>
-        <ul class="2xl:text-xl space-y-2">
+        <ul
+          class="2xl:text-xl space-y-2"
+          :class="$i18n.locale == 'ar' ? 'font-semibold' : ''"
+        >
           <li>{{ $t("message.footer.left.item1") }}</li>
           <li>{{ $t("message.footer.left.item2") }}</li>
           <li>{{ $t("message.footer.left.item3") }}</li>
@@ -25,7 +28,10 @@
         >
           {{ $t("message.footer.mid.title") }}
         </h1>
-        <ul class="2xl:text-xl space-y-2">
+        <ul
+          class="2xl:text-xl space-y-2"
+          :class="$i18n.locale == 'ar' ? 'font-semibold' : ''"
+        >
           <li>{{ $t("message.footer.mid.item1") }}</li>
           <li>{{ $t("message.footer.mid.item2") }}</li>
           <li>{{ $t("message.footer.mid.item3") }}</li>

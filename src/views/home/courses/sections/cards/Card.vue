@@ -15,7 +15,7 @@
 
     <p
       class="font-normal text-center p-2 text-white"
-      :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
+      :class="[$i18n.locale == 'ar' ? 'font-cairo font-semibold' : '']"
     >
       {{ $t("message.courses.card.p") }}
     </p>

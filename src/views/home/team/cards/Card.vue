@@ -8,7 +8,10 @@
         alt="Bonnie image"
         src="@/assets/images/avatar3.jpg"
       />
-      <h1 class="font-medium text-white 2xl:text-xl">
+      <h1
+        class="text-white 2xl:text-xl"
+        :class="[$i18n.locale == 'ar' ? 'font-semibold' : 'font-medium']"
+      >
         {{ $t("message.team.name") }}
       </h1>
     </div>

@@ -7,8 +7,10 @@
         </h1>
       </div>
       <div class="grid grid-cols-2 gap-0 place-content-start">
-        <div class="[writing-mode:vertical-lr] w-10">
-          <h1 class="text-2xl text-let font-krub tracking-wide text-white">
+        <div class="[writing-mode:vertical-rl] w-10">
+          <h1
+            class="text-2xl text-let font-krub tracking-wide text-white -rotate-180"
+          >
             BEGINER'S
           </h1>
         </div>

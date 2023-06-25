@@ -8,7 +8,9 @@
       :class="[$i18n.locale == 'ar' ? 'mr-9' : '']"
     >
       {{ $t("message.courses.up.find") }}
-      <sub class="text-lg"> {{ $t("message.courses.up.your") }}</sub>
+      <sub class="text-lg font-semibold">
+        {{ $t("message.courses.up.your") }}</sub
+      >
     </h1>
     <div
       class="mr-9 hidden md:flex"

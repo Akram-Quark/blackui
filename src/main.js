@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import router from "./router";
+import Toasted from "vue-toasted";
 
 Vue.config.productionTip = false;
 library.add(faFacebook);
@@ -18,6 +19,9 @@ library.add(faInstagram);
 library.add(faTelegram);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.use(FlagIcon);
+Vue.use(Toasted, {
+  duration: 2000,
+});
 
 new Vue({
   router,

@@ -1,6 +1,7 @@
 <template lang="">
   <div
-    class="relative mb-40 lg:mb-0 flex justify-center lg:justify-end lg:mr-6 order-1 lg:order-2"
+    class="relative mb-40 lg:mb-0 flex justify-center lg:justify-end order-1 lg:order-2"
+    :class="[$i18n.locale == 'ar' ? 'lg:ml-6 ' : 'lg:mr-6']"
   >
     <div class="w-64 top-0 left-73 absolute">
       <img src="@/assets/images/aboutimg.png" alt="" />

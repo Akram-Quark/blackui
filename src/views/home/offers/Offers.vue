@@ -2,9 +2,8 @@
   <div
     class="grid mx-8 2xl:p-10 md:mx-0 md:flex md:items-center justify-evenly shadow-2xl shadow-black"
   >
-    <template v-for="offer in offers">
+    <div v-for="offer in offers" :key="offer.id">
       <div
-        :key="offer.id"
         class="text-white w-60 h-20 flex space-x-4 py-2 items-center p-5"
         :class="[$i18n.locale == 'ar' ? 'justify-center' : '']"
         v-if="$i18n.locale == 'en'"
@@ -43,7 +42,7 @@
           </h2>
         </div>
       </div>
-    </template>
+    </div>
   </div>
 </template>
 
