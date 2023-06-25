@@ -12,6 +12,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import router from "./router";
 import Toasted from "vue-toasted";
+import * as VueGoogleMaps from "vue2-google-maps";
 
 Vue.config.productionTip = false;
 library.add(faFacebook);
@@ -22,7 +23,14 @@ Vue.use(FlagIcon);
 Vue.use(Toasted, {
   duration: 2000,
 });
+console.log("env", JSON.stringify(process.env.VUE_APP_API_KEY));
 
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: `${process.env.VUE_APP_API_KEY}`,
+  },
+  installComponents: true,
+});
 new Vue({
   router,
   render: (h) => h(App),

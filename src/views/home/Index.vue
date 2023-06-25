@@ -6,6 +6,7 @@
       <Offers />
       <Chalenge />
       <CoursSection />
+      <Map />
       <About />
       <Video />
       <TeamSection />
@@ -26,6 +27,7 @@ import Video from "./video-section/Video.vue";
 import TeamSection from "./team/TeamSection.vue";
 import Subscribe from "./subscribtion/Subscribe.vue";
 import Footer from "./footer-section/Footer.vue";
+import Map from "@/views/home/map-section/Map.vue";
 
 export default {
   name: "HomeView",
@@ -51,6 +53,7 @@ export default {
     TeamSection,
     Subscribe,
     Footer,
+    Map,
   },
 };
 </script>
