@@ -28,6 +28,7 @@
       </div>
       <div class="mb-6 2xl:mb-12">
         <input
+          dir="ltr"
           type="email"
           name="email"
           id="email"
@@ -162,6 +163,7 @@ export default {
 
     async sendEmail(e) {
       const isFormCorrect = await this.v$.$validate();
+      console.log(isFormCorrect);
       if (!isFormCorrect) {
         if (this.$i18n.locale == "ar") {
           this.$toasted.show("آسف تأكد من عدم وجود أخطاء ");

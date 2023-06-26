@@ -1,6 +1,6 @@
 <template lang="">
   <div
-    class="flex justify-center items-center flex-1 flex-col"
+    class="flex justify-center lg:items-start items-center flex-1 flex-col"
     :class="[$i18n.locale == 'ar' ? 'font-cairo lg:items-start' : 'lg:items-']"
   >
     <h1 class="text-3xl font-semibold lg:text-left">

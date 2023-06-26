@@ -10,12 +10,26 @@
       @click="handleMapClick"
     >
       <GmapMarker
-        :position="marker.position"
-        :clickable="true"
-        :draggable="true"
-        @drag="handleMarkerDrag"
-        @click="panToMarker"
-      />
+        :key="index"
+        v-for="(gmp, index) in locations"
+        :position="gmp"
+        @mouseover="showByIndex = index"
+        @mouseout="showByIndex = null"
+      >
+        <gmap-info-window :opened="showByIndex === index" class="info">
+          <div class="p-2 text-center w-full">
+            <h3
+              class="text-black font-cairo text-center border-black font-semibold"
+              v-if="$i18n.locale == 'ar'"
+            >
+              {{ gmp.label_ar }}
+            </h3>
+            <h3 class="text-black text-bold" v-else>
+              {{ gmp.label_en }}
+            </h3>
+          </div>
+        </gmap-info-window>
+      </GmapMarker>
     </GmapMap>
   </div>
 </template>
@@ -25,8 +39,49 @@ export default {
 
   data() {
     return {
-      marker: { position: { lat: 35.54069774065647, lng: 6.16386622064474 } },
-      center: { lat: 35.54069774065647, lng: 6.16386622064474 },
+      showByIndex: null,
+      locations: [
+        {
+          lat: 35.54069774065647,
+          lng: 6.16386622064474,
+          label_en: "Principal store",
+          label_ar: "المتجر الرئيسي",
+        },
+        {
+          lat: 35.543680490182176,
+          lng: 6.167278289794922,
+          label_en: "store 1",
+          label_ar: "متجر 1",
+        },
+        {
+          lat: 35.548778507756225,
+          lng: 6.165218353271484,
+          label_en: "store 2",
+          label_ar: "متجر 2",
+        },
+        {
+          lat: 35.54240881892859,
+          lng: 6.15761969112518,
+          label_en: "store 3",
+          label_ar: "متجر 3",
+        },
+      ],
+      marker: {
+        position: [
+          {
+            lat: 35.54069774065647,
+            lng: 6.16386622064474,
+            label_en: "Principal store",
+            label_ar: "المتجر الرئيسي",
+          },
+        ],
+      },
+      center: {
+        lat: 35.54069774065647,
+        lng: 6.16386622064474,
+        label_en: "Principal store",
+        label_ar: "المتجر الرئيسي",
+      },
       zoomLevel: 15,
       mapOptions: {
         disableDefaultUI: true,
