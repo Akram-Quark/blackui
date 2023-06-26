@@ -25,18 +25,6 @@
           v-model="name"
           class="bg-mydark border border-mypurple text-gray-400 text-sm focus:ring-purple-900 focus:border-purple-900 block w-full p-2.5"
         />
-        <ul v-if="v$.name.$error" class="text-red-500 mt-1">
-          <div v-if="$i18n.locale == 'en'">
-            <li v-for="error of v$.$errors" :key="error.$uid">
-              {{ error.$message }}
-            </li>
-          </div>
-          <div v-else>
-            <li v-for="error of v$.$errors" :key="error.$uid">
-              {{ translateErr(error.$message) }}
-            </li>
-          </div>
-        </ul>
       </div>
       <div class="mb-6 2xl:mb-12">
         <input
@@ -47,20 +35,8 @@
           class="bg-mydark border border-mypurple text-gray-400 text-sm focus:ring-purple-900 focus:border-purple-900 block w-full p-2.5"
           placeholder="name@flowbite.com"
         />
-        <ul v-if="v$.email.$error" class="text-red-500 mt-1">
-          <div v-if="$i18n.locale == 'en'">
-            <li v-for="error of v$.$errors" :key="error.$uid">
-              {{ error.$message }}
-            </li>
-          </div>
-          <div v-else>
-            <li v-for="error of v$.$errors" :key="error.$uid">
-              {{ translateErr(error.$message) }}
-            </li>
-          </div>
-        </ul>
       </div>
-      <div class="mb-6 2xl:mb-12">
+      <div class="mb-3 2xl:mb-12">
         <textarea
           type="text"
           name="message"
@@ -72,11 +48,23 @@
           v-model="message"
         />
       </div>
-      <div class="flex justify-center">
+      <div class="flex justify-center flex-col">
+        <ul v-if="v$.name.$error" class="text-red-500 text-sm mb-3">
+          <div v-if="$i18n.locale == 'en'">
+            <li v-for="error of v$.$errors" :key="error.$uid">
+              {{ error.$message }}
+            </li>
+          </div>
+          <div v-else>
+            <li v-for="error of v$.$errors" :key="error.$uid">
+              {{ translateErr(error.$message) }}
+            </li>
+          </div>
+        </ul>
         <input
           :value="$t('message.subscribe.left.btn')"
           type="submit"
-          class="text-white bg-mypurple hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5"
+          class="text-white bg-mypurple hover:bg-purple-950 font-medium text-sm w-full sm:w-auto px-5 py-2.5"
         />
       </div>
     </form>

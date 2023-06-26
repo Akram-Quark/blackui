@@ -104,6 +104,13 @@ const en = {
       email: "The {attribute} field contains an invalid email address",
       alpha: "The {attribute} field should contain only alphabetic characters",
     },
+    map: {
+      right: {
+        find: "Find",
+        us: "Us",
+        address: "address: 19th jun 1965 street batna,algeria",
+      },
+    },
   },
 };
 

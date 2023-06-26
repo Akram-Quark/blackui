@@ -8,7 +8,7 @@
       <div class="flex lg:order-2">
         <button
           type="button"
-          class="text-mydark lg:block hidden bg-white md:hover:bg-mydark md:hover:text-white focus:ring-4 focus:outline-none font-medium text-sm px-4 py-2 text-center mr-3 md:mr-0"
+          class="text-mydark lg:block hidden bg-white md:hover:bg-mydark md:hover:text-white font-medium text-sm px-4 py-2 text-center mr-3 md:mr-0"
           :class="[$i18n.locale == 'ar' ? 'font-cairo font-semibold' : '']"
         >
           {{ $t("message.nav.btn.get_started") }}

@@ -1,9 +1,10 @@
 <template lang="">
   <div
-    class="px-6 text-white font-medium w-full grid lg:grid-cols-2 h-96 my-12"
+    class="px-6 flex flex-col text-white font-medium lg:gap-4 w-full lg:grid lg:grid-cols-2 h-[600px] lg:h-96 my-12"
   >
+    <Right @find:pos="findPosition()" />
+
     <Left ref="mapComponent" />
-    <Right @find:pos="find()" />
   </div>
 </template>
 <script>
@@ -17,7 +18,7 @@ export default {
     };
   },
   methods: {
-    find() {
+    findPosition() {
       this.$refs.mapComponent.geolocate();
     },
   },

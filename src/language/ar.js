@@ -99,10 +99,12 @@ const ar = {
         follow: "تابعنا!",
       },
     },
-    example_form: {
-      required: "حقل {attribute} مطلوب",
-      email: "يحتوي الحقل {attribute} على عنوان بريد إلكتروني غير صالح",
-      alpha: "يجب أن يحتوي الحقل {attribute} على أحرف أبجدية فقط",
+    map: {
+      right: {
+        find: "تجدنا",
+        us: "في",
+        address: "العنوان: 19 يونيو 1965 شارع باتنة ، الجزائر",
+      },
     },
   },
 };

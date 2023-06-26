@@ -6,8 +6,8 @@
       <Offers />
       <Chalenge />
       <CoursSection />
-      <Map />
       <About />
+      <Map />
       <Video />
       <TeamSection />
       <Subscribe />
