@@ -102,9 +102,9 @@ export default {
   },
 
   methods: {
-    toastEn(e) {
+    async toastEn(e) {
       try {
-        emailjs.sendForm(
+        const response = await emailjs.sendForm(
           "service_xwi6wll",
           "template_rfyp2h7",
           e.target,
@@ -115,6 +115,7 @@ export default {
             message: this.message,
           }
         );
+        console.log(response);
         this.$toasted.show("Thank you for subscribing to ouer newsletter !!");
       } catch (error) {
         console.log({ error });

@@ -15,8 +15,13 @@
         :position="gmp"
         @mouseover="showByIndex = index"
         @mouseout="showByIndex = null"
+        :icon="{
+          url: require('@/assets/images/location.png'),
+          size: { width: 35, height: 40, f: 'px', b: 'px' },
+          scaledSize: { width: 30, height: 45, f: 'px', b: 'px' },
+        }"
       >
-        <gmap-info-window :opened="showByIndex === index" class="info">
+        <gmap-info-window :opened="showByIndex === index">
           <div class="p-2 text-center w-full">
             <h3
               class="text-black font-cairo text-center border-black font-semibold"
