@@ -43,44 +43,17 @@
         <ul
           class="flex flex-col p-4 md:p-0 mt-4 font-krub bg-mydark md:flex-row md:space-x-1 md:mt-0 md:border-0"
         >
-          <li>
+          <li v-for="item in navigation" :key="item">
             <a
               href="#"
               class="block py-2 mx-10 pl-3 pr-4 text-white hover:underline hover:underline-offset-8 bg-mydark rounded md:bg-transparent md:p-0"
               aria-current="page"
               :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
             >
-              {{ $t("message.nav.home") }}
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block py-2 mx-10 pl-3 pr-4 text-white hover:underline hover:underline-offset-8 bg-mydark rounded md:bg-transparent md:p-0"
-              :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
-            >
-              {{ $t("message.nav.about") }}
+              {{ $t(item) }}
             </a>
           </li>
 
-          <li>
-            <a
-              href="#"
-              class="block py-2 mx-10 pl-3 pr-4 text-white hover:underline hover:underline-offset-8 bg-mydark rounded md:bg-transparent md:p-0"
-              :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
-            >
-              {{ $t("message.nav.services") }}
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="block py-2 pl-3 mx-10 pr-4 text-white hover:underline hover:underline-offset-8 bg-mydark rounded md:bg-transparent md:p-0"
-              :class="[$i18n.locale == 'ar' ? 'font-cairo' : '']"
-            >
-              {{ $t("message.nav.contact") }}
-            </a>
-          </li>
           <li :class="[$i18n.locale == 'ar' ? 'font-cairo font-semibold' : '']">
             <LangSelector />
           </li>
@@ -96,6 +69,17 @@ import LangSelector from "./LangSelector.vue";
 
 export default {
   name: "Nav",
+
+  data() {
+    return {
+      navigation: [
+        "message.nav.home",
+        "message.nav.about",
+        "message.nav.services",
+        "message.nav.contact",
+      ],
+    };
+  },
 
   mounted() {
     initCollapses();

@@ -1,5 +1,6 @@
 <template>
   <swiper
+    dir="ltr"
     :modules="modules"
     :slides-per-view="1"
     :space-between="10"
@@ -39,7 +40,9 @@ export default {
     };
   },
   setup() {
-    const onSlideChange = () => {};
+    const onSlideChange = () => {
+      console.log("changed");
+    };
     return {
       onSlideChange,
       modules: [Navigation, A11y],

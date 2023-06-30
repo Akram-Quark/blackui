@@ -23,7 +23,6 @@ Vue.use(FlagIcon);
 Vue.use(Toasted, {
   duration: 2000,
 });
-console.log("env", JSON.stringify(process.env.VUE_APP_API_KEY));
 
 Vue.use(VueGoogleMaps, {
   load: {

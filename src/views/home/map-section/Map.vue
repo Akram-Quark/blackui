@@ -1,7 +1,5 @@
 <template lang="">
-  <div
-    class="px-6 flex flex-col text-white font-medium lg:gap-4 w-full lg:grid lg:grid-cols-2 h-[600px] lg:h-96 my-12"
-  >
+  <div class="grid grid-cols-1 lg:grid-cols-2 2xl:w-3/4 2xl:mx-auto my-14">
     <Right @find:pos="findPosition()" />
 
     <Left ref="mapComponent" />

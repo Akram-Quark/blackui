@@ -34,7 +34,6 @@
         >
           <li>{{ $t("message.footer.mid.item1") }}</li>
           <li>{{ $t("message.footer.mid.item2") }}</li>
-          <li>{{ $t("message.footer.mid.item3") }}</li>
           <li>{{ $t("message.footer.mid.item4") }}</li>
           <li>{{ $t("message.footer.mid.item5") }}</li>
         </ul>

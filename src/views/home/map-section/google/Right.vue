@@ -1,11 +1,15 @@
 <template lang="">
   <div
-    class="flex justify-center lg:items-start items-center flex-1 flex-col"
-    :class="[$i18n.locale == 'ar' ? 'font-cairo lg:items-start' : 'lg:items-']"
+    class="flex justify-center lg:items-start mb-8 lg:mb-0 items-center flex-1 flex-col text-white"
+    :class="[
+      $i18n.locale == 'ar'
+        ? 'font-cairo lg:items-start mr-6'
+        : 'lg:items-start ml-6',
+    ]"
   >
-    <h1 class="text-3xl font-semibold lg:text-left">
+    <h1 class="text-3xl 2xl:text-6xl text-center lg:text-left font-bold">
       {{ $t("message.map.right.find") }}
-      <sub class="text-mypurple"> {{ $t("message.map.right.us") }}</sub>
+      <span class="text-mypurple"> {{ $t("message.map.right.us") }}</span>
     </h1>
 
     <p

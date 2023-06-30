@@ -18,7 +18,7 @@
         :icon="{
           url: require('@/assets/images/location.png'),
           size: { width: 35, height: 40, f: 'px', b: 'px' },
-          scaledSize: { width: 30, height: 45, f: 'px', b: 'px' },
+          scaledSize: { width: 35, height: 45, f: 'px', b: 'px' },
         }"
       >
         <gmap-info-window :opened="showByIndex === index">
@@ -38,6 +38,7 @@
     </GmapMap>
   </div>
 </template>
+
 <script>
 export default {
   name: "Left",
@@ -214,20 +215,20 @@ export default {
 </script>
 <style scoped>
 .map {
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 400px;
 }
 
 @media screen and (max-width: 500px) {
   .map {
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    height: 400px;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 999px) {
   .map {
-    width: 90%;
-    height: 100%;
+    width: 600px;
+    height: 400px;
   }
 }
 </style>
